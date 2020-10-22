@@ -1,0 +1,339 @@
+body{
+    background-image: url("honeycomb.png");
+    background-size: 100%;
+    background-repeat: repeat;
+    margin: 3%;
+    font-family: futura;
+    display: flex;
+    flex-wrap: wrap;
+    color: #5a2400;
+  }
+
+.top-row{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.heading{
+    color:  #5a2400;
+    text-align: center;
+    font-family: bodoni;
+    font-weight: lighter;
+    background-image: linear-gradient(to bottom right, #f7bf7f, #e69f64);
+    border: outset #DF8B56 5px;
+    width: 20%;
+    border-radius: 5px;
+  }
+
+  .heading .title{
+    padding: 10px;
+    font-size: xx-large;
+    color: #5a2400;
+    font-weight: lighter;
+    text-shadow: 1px 1px 0px #fdecd7;
+    background-image: linear-gradient(to bottom right, #fdecd7, #fef8ed);
+  }
+
+  .logo{
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .nav-bar{
+    display:flex;
+    margin: 20px;
+    height: 34%;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #f7bf7f, #e69f64);
+    border: outset #DF8B56 5px;
+    font-weight: bolder;
+    border-radius: 5px;
+  }
+
+  .mob-nav{
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: transparent;
+    position: relative;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+.mob-nav #myLinks {
+    display: none;
+    padding: 10px 20px 40px 20px;
+  }
+
+  /* Style navigation menu links */
+.mob-nav a {
+    color: #5a2400;
+    padding: 20px 20px;
+    font-size: 15px;
+    display: block;
+    background-image: linear-gradient(to bottom right, #f7bf7f, #e69f64);
+    border: outset #DF8B56 2px;
+    font-weight: bolder;
+  }
+
+  /* Style the hamburger menu */
+.mob-nav a.icon {
+    background: #e69f64;
+    display: block;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    float: left;
+    font-size: large;
+    display: inline;
+    border-right: 3px solid #8A5638;
+    color: #5a2400;
+    display: block;
+    padding: 10px;
+    height: 100%;
+  }
+  
+  li:hover {
+    background-color: #fdecd7;
+  }
+
+  .nav-bar a{
+      color: #5a2400;
+  }
+
+  /* Style The Dropdown Button */
+.dropbtn {
+    background-image: linear-gradient(to bottom right, #f7bf7f, #e69f64);
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    color: #5a2400;
+    font-size: large;
+    font-weight: bold;
+    height: 100%;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 20px;
+    right: inherit +20px;
+    background-color: #fdecd7;
+    min-width: 160px;
+    border: outset #DF8B56 5px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color:#5a2400;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f7bf7f}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  /* Inserting this collapsed row between two flex items will make 
+ * the flex item that comes after it break to a new row */
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+
+  .mid-row{
+    margin: 2%;
+    margin-top: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .chara{
+    width: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .chara-img{
+    border: inset  #DF8B56 5px;
+    border-radius: 5px;
+    width: 250px;
+    margin: 20px;
+  }
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.button{
+    width: 50%;
+    padding: 5px;
+    font-family: bodoni;
+    font-size: 150%;
+    font-weight: bold;
+    color: #5a2400;
+    border: outset #DF8B56 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f7bf7f;
+}
+
+.button:hover{
+    background-color: #fdecd7;
+}
+
+.bot-row{
+    margin: 3%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  h3{
+    text-align: left;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-shadow: 1px 1px 0px #fdecd7;
+  }
+
+  .user{
+    display: flex;
+    flex-direction: column;
+  }
+
+  p{
+    padding: 20px;
+    color: #5a2400;
+    font-weight: lighter;
+    text-shadow: 1px 1px 0px #fdecd7;
+    background-image: linear-gradient(to bottom right, #f7bf7f, #e69f64);
+    border: outset #DF8B56 3px;
+  }
+
+  .soc-med{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .icon{
+    border: inset  #DF8B56 2px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  .icon:hover{
+    opacity: 0.5;
+    background-color:  #fdecd7;
+  }
+
+
+/* Desktop ----------- */
+@media only screen and (min-width: 992px) {
+    /* hide mobile nav bar */
+    .mob-nav{
+        display: none;
+    }
+}
+
+
+/* Tablet (Portrait) ----------- */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+        .heading { 
+            width: 80%;
+            margin: auto;
+        }
+        .top-row{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .bot-row{
+            flex-wrap: wrap;
+            /* hide and switch to tabley/mobile nav bar */
+        }.nav-bar{
+            display: none;
+        }
+        .soc-med{
+            flex-direction: row;
+        }
+        .icon{
+            width: 75px;
+            height: 75px;
+        }
+        a.icon{
+            width: 75px;
+            height: 75px;
+        }
+        body{
+            font-size: smaller;
+        }
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 600px) {
+    .heading { 
+        width: 100%;
+        margin: auto;
+    }
+    .top-row{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .bot-row{
+        flex-wrap: wrap;
+    }
+    /* hide and switch to tabley/mobile nav bar */
+    .nav-bar{
+        display: none;
+    }
+    .soc-med{
+        flex-direction: row;
+    }
+    .icon{
+        width: 100px;
+        height: 100px;
+    }
+    a.icon{
+        width: 80x;
+        height: 80px;
+    }
+    body{
+        font-size: small;
+    }
+}
